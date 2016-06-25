@@ -2,10 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,400bold);
 
 
-h1.name {
+h1 {
 	text-align: center;
 	color: #f68ea9;	
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 300;
 }
-
+p {
+	text-align: center;
+	font-size: 10px;
+}
