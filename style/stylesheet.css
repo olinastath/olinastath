@@ -1,9 +1,43 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,400bold);
 
-h1 {
-	text-align: center;
-	color: #f68ea9;	
+body {
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 300;
+	background-color: #fffcfa;
+}
+a {
+	text-decoration: none;
+	color: gray;
+}
+a:hover {
+	text-decoration: underline;
+}
+#main {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 100;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+		 -o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+	min-width: 320px;
+}
+
+#name {
+	color: #f68ea9;		
+	font-weight: 300;
+}
+
+#social a {
+	text-decoration: none;
+	color:gray;
+}
+#social a:hover {
+	text-decoration: none;
+	color: #f68ea9;
 }
