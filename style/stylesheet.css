@@ -4,19 +4,19 @@
 body {
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 300;
-	background-color: #ffffff;
+	background-color: #fffcfa;
 }
+
 a {
 	text-decoration: none;
 	color: gray;
 }
+
 a:hover {
 	text-decoration: underline;
 }
-#links {
-	color:gray;
-}
-#main {
+
+.main {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
@@ -31,16 +31,35 @@ a:hover {
 	min-width: 320px;
 }
 
-#name {
+#title {
 	color: #f68ea9;		
 	font-weight: 300;
 }
 
-#social a {
+.links {
+	color:gray;
+}
+
+.social a {
 	text-decoration: none;
 	color:gray;
 }
-#social a:hover {
-	text-decoration: none;
+.social a:hover {
 	color: #f68ea9;
+}
+
+#github, #twitter, #instagram, #linkedin {
+	display: inline-block;
+}
+#github a:hover {
+	color: #a6e22e;
+}
+#twitter a:hover {
+	color: #55acee;
+}
+#instagram a:hover {
+	color: #fd971f;
+}
+#linkedin a:hover {
+	color: #ae81dd;
 }
