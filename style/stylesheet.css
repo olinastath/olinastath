@@ -48,9 +48,6 @@ a:hover {
 	color: #f68ea9;
 }
 
-#github, #twitter, #instagram, #linkedin {
-	display: inline-block;
-}
 #github a:hover {
 	color: #a6e22e;
 }
@@ -62,4 +59,10 @@ a:hover {
 }
 #linkedin a:hover {
 	color: #ae81dd;
+}
+
+@media (max-width: 400px) {
+	.main {
+		width: 400px;
+	}
 }
