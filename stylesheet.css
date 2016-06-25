@@ -1,3 +1,11 @@
+/* Fonts */
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+
 h1 {
+	text-align: center;
 	color: #f68ea9;	
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 300;
 }
+
