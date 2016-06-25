@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,400bold);
 
 
-h1 {
+h1.name {
 	text-align: center;
 	color: #f68ea9;	
 	font-family: 'Roboto', sans-serif; 
