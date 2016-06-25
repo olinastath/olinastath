@@ -4,7 +4,7 @@
 body {
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 300;
-	background-color: #fffcfa;
+	background-color: #ffffff;
 }
 a {
 	text-decoration: none;
@@ -12,6 +12,9 @@ a {
 }
 a:hover {
 	text-decoration: underline;
+}
+#links {
+	color:gray;
 }
 #main {
 	display: block;
