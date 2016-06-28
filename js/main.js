@@ -34,29 +34,11 @@ $('#projects').on('click',function() {
 });
 
 $('#press').on('click',function() {
-	var count = 1;
-	var quoteNum = 'span.review#quote' + count;
 	$('div.main').animate( {left: "25%"}, 2500);
 	$('div.about').fadeOut(1000);
 	$('div.projects').fadeOut(1000);
 	$('div.contact').fadeOut(1000);
-	$('div.press').fadeToggle(2500, function quote(count, quoteNum) {
-		if (count <= 5) {
-			$(quoteNum).fadeIn(4000, function() {
-				$(quoteNum).fadeOut(4000);
-				count++;
-				quoteNum = 'span.review#quote' + count;
-				quote(count, quoteNum);
-			});
-			
-		} else {
-			count = 1;
-			quoteNum = 'span.review#quote' + count;
-			quote(count, quoteNum);
-		}	
-		
-	});
-
+	$('div.press').fadeToggle(2500);
 });
 
 $('#contact').on('click',function() {
@@ -73,4 +55,20 @@ $('#title').on('click',function() {
 	$('div.projects').fadeOut(1000);
 	$('div.press').fadeOut(1000);
 	$('div.contact').fadeOut(1000);
+});
+
+var count = 1;
+$(function quote(count) {
+	if (count <= 5) {
+		$('span.review#quote' + count).fadeIn(4000, function() {
+			$('span.review#quote' + count).fadeOut(4000);
+			count++;
+			quote(count, 'span.review#quote' + count);
+		});
+		
+	} else {
+		count = 1;
+		quoteNum = 'span.review#quote' + count;
+		quote(count, quoteNum);
+	}
 });
