@@ -14,11 +14,8 @@ h1 {
 }
 
 p, span, a {
-	color: gray;
-}
-
-a {
 	text-decoration: none;
+	color: gray;
 }
 
 span:hover, a:hover  {
@@ -47,7 +44,8 @@ span:hover, a:hover  {
 	color: #f68ea9;
 }
 
-.social a {
+.social span {
+	margin-right: 5px;
 	text-decoration: none;
 }
 
@@ -176,10 +174,9 @@ span:hover, a:hover  {
 	color: #ae81dd;
 }
 
-#email span:hover {
-	color: #a6e22e;
+#email a:hover {
+	color: #ae81dd;
 }
-
 /* press section */
 .press {
 	display:none;

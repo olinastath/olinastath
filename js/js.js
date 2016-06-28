@@ -33,7 +33,16 @@ $('#contact').on('click',function() {
 
 $(function(){
     $(".i-like").typed({
-    strings: ["the internet.", "intersectional feminism.", "cacti.", "theatre of all kinds.", "meta humor.", "complex female characters.", "Johnny Gallagher.", "the Greek Weird Wave.", "science.", "YA novels about the disenchantment of youth.","sad indie rock.", "Crazy Ex-Girlfriend.", "the color green.", "Sylvia Plath.", "mashed potatoes.", "Community.",  "oreos.", "road trip movies.", "broccoli.", "the color pink.", "twitter.", "internet slang.", "television.", "New York.", "concerts.", "traveling.", "fairy lights.", "tumblr poetry.", "pop culture."],
+    strings: ["the internet.", "apple pie.", "intersectional feminism.", 
+    "cacti.", "theatre of all kinds.", "meta humor.", 
+    "complex female characters.", "Johnny Gallagher.", 
+    "the Greek Weird Wave.", "science.", "pop culture.", 
+    "YA novels about the disenchantment of youth.","sad indie rock.", 
+    "Crazy Ex-Girlfriend.", "the color green.", "Sylvia Plath.", 
+    "mashed potatoes.", "Community.",  "oreos.", "road trip movies.", 
+    "broccoli.", "Daphne." , "the color pink.", "twitter.",
+    "television.", "New York.", "concerts.", "fairy lights.", 
+    "tumblr poetry.", "Bo Burnham.", "cult movies."],
     typeSpeed: 10,
     showCursor: true,
     loop: true,
