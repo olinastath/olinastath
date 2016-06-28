@@ -18,7 +18,6 @@ $('#projects').on('click',function() {
 $('#press').on('click',function() {
 	var count = 1;
 	var quoteNum = 'span.review#quote' + count;
-	alert(quoteNum);
 	$('div.main').animate( {left: "25%"}, 2500);
 	$('div.about').fadeOut(1000);
 	$('div.projects').fadeOut(1000);
