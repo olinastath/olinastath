@@ -4,7 +4,6 @@ $('#about').on('click',function() {
 	$('div.projects').fadeOut(1000);
 	$('div.press').fadeOut(1000);
 	$('div.about').fadeToggle(2500);
-
 });
 
 $('#projects').on('click',function() {
@@ -24,8 +23,8 @@ $('#press').on('click',function() {
 	$('div.contact').fadeOut(1000);
 	$('div.press').fadeToggle(2500, function quote(count, quoteNum) {
 		if (count <= 5) {
-			$(quoteNum).fadeIn(3000, function() {
-				$(quoteNum).fadeOut(3000);
+			$(quoteNum).fadeIn(4000, function() {
+				$(quoteNum).fadeOut(4000);
 				count++;
 				quoteNum = 'span.review#quote' + count;
 				quote(count, quoteNum);
