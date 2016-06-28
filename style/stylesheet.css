@@ -9,7 +9,7 @@ body {
 
 }
 
-h1 {
+h1, h2, h4 {
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 300;
 }
@@ -19,7 +19,7 @@ p, span, a {
 	color: gray;
 }
 
-span:hover, a:hover  {
+.main p span:hover, a:hover  {
 	text-decoration: underline;
 }
 
@@ -37,8 +37,7 @@ span:hover, a:hover  {
 	   -moz-transform: translate(-50%,-50%);
 		 -o-transform: translate(-50%,-50%);
 			transform: translate(-50%,-50%);
-	min-width: 320px;
-		
+	min-width: 320px;		
 }
 
 #title {
@@ -196,4 +195,21 @@ span:hover, a:hover  {
 
 .about p, .projects p, .contact p, .press p {
 	width: 500px;
+}
+
+.review {
+	display:none;
+	position: absolute;
+	z-index: 100;
+	top:120%;
+	min-width: 320px;	
+	opacity:0.8;
+}
+
+.review h2 {
+	text-align: center;
+}
+
+.review h4 {
+	text-align: right;
 }
