@@ -1,5 +1,12 @@
 $('#about').on('click',function() {
-	$('div.main').animate( {left: "25%"}, 2500);
+	if (document.documentElement.clientWidth < 1006) {
+		$('div.main').animate( {top: "15%"}, 2500);
+	} 
+
+	if (document.documentElement.clientWidth >= 1006) {
+		$('div.main').animate( {left: "25%"}, 2500);
+	}
+
 	$('div.contact').fadeOut(1000);
 	$('div.projects').fadeOut(1000);
 	$('div.press').fadeOut(1000);
@@ -26,7 +33,14 @@ $('#about').on('click',function() {
 });
 
 $('#projects').on('click',function() {
-	$('div.main').animate( {left: "25%"}, 2500);
+	if (document.documentElement.clientWidth < 1006) {
+		$('div.main').animate( {top: "15%"}, 2500);
+	} 
+
+	if (document.documentElement.clientWidth >= 1006) {
+		$('div.main').animate( {left: "25%"}, 2500);
+	}
+
 	$('div.about').fadeOut(1000);
 	$('div.contact').fadeOut(1000);
 	$('div.press').fadeOut(1000);
@@ -34,7 +48,14 @@ $('#projects').on('click',function() {
 });
 
 $('#press').on('click',function() {
-	$('div.main').animate( {left: "25%"}, 2500);
+	if (document.documentElement.clientWidth < 1006) {
+		$('div.main').animate( {top: "15%"}, 2500);
+	} 
+
+	if (document.documentElement.clientWidth >= 1006) {
+		$('div.main').animate( {left: "25%"}, 2500);
+	}
+
 	$('div.about').fadeOut(1000);
 	$('div.projects').fadeOut(1000);
 	$('div.contact').fadeOut(1000);
@@ -42,7 +63,14 @@ $('#press').on('click',function() {
 });
 
 $('#contact').on('click',function() {
-	$('div.main').animate( {left: "25%"}, 2500);
+	if (document.documentElement.clientWidth < 1006) {
+		$('div.main').animate( {top: "15%"}, 2500);
+	} 
+
+	if (document.documentElement.clientWidth >= 1006) {
+		$('div.main').animate( {left: "25%"}, 2500);
+	}
+
 	$('div.about').fadeOut(1000);
 	$('div.projects').fadeOut(1000);
 	$('div.press').fadeOut(1000);
@@ -50,7 +78,14 @@ $('#contact').on('click',function() {
 });
 
 $('#title').on('click',function() {
-	$('div.main').animate( {left: "50%"}, 2500);
+	if (document.documentElement.clientWidth < 1006) {
+		$('div.main').animate( {top: "50%"}, 2500);
+	} 
+
+	if (document.documentElement.clientWidth >= 1006) {
+		$('div.main').animate( {left: "50%"}, 2500);
+	}
+
 	$('div.about').fadeOut(1000);
 	$('div.projects').fadeOut(1000);
 	$('div.press').fadeOut(1000);

@@ -231,3 +231,88 @@ p, span, a {
 #quote2-2 {
 	text-align: right;
 }
+
+
+
+@media (min-width: 500px) and (max-width: 1006px) {
+	.about {
+		left: 50%;
+		top: 65%;
+		min-width: 500px;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+			 -o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+
+	}
+
+	.projects, .press, .contact{ 
+		left: 50%;
+		top: 32%;
+		min-width: 500px;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+			 -o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+
+	}
+
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+	.about {
+		left: 45%;
+		top: 65%;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+			 -o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+
+	}
+
+	.projects, .press, .contact { 
+		left: 45%;
+		top: 32%;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+			 -o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+
+	}
+
+	.about p, .projects p, .press p, .contact p {
+		width: 380px;
+	}
+	.about img {
+		width: 380px;
+	}
+}
+
+@media (max-width: 400px) {
+	.about {
+		left: 50%%;
+		top: 60%;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+			 -o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+	}
+
+	.projects, .press, .contact { 
+		left: 45%;
+		top: 32%;
+		-webkit-transform: translate(-50%,-50%);
+		   -moz-transform: translate(-50%,-50%);
+			 -o-transform: translate(-50%,-50%);
+				transform: translate(-50%,-50%);
+
+	}
+
+	.about p, .projects p, .press p, .contact p {
+		max-width: 320px;
+	}
+
+	.about img {
+		max-width: 320px;
+	}
+}
