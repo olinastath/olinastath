@@ -42,9 +42,3 @@ $(function(){
     backDelay: 1200,
     });
 });
-
-$(function()){
-	$(".reviews").animate({
-		
-	})
-}
