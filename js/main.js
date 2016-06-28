@@ -59,7 +59,7 @@ $('#title').on('click',function() {
 
 var count = 1;
 $(function quote(count) {
-	if (count <= 5) {
+	if (count <= 4) {
 		$('span.review#quote' + count).fadeIn(4000, function() {
 			$('span.review#quote' + count).fadeOut(4000);
 			count++;

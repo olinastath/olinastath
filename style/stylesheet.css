@@ -213,3 +213,21 @@ p, span, a {
 .review h4 {
 	text-align: right;
 }
+
+#quote2 {
+	display:none;
+	position: absolute;
+	z-index: 100;
+	top:90%;
+	left: 13%;
+	min-width: 320px;	
+	opacity:0.8;
+}
+
+#quote2-1 {
+	text-align: left;
+}
+
+#quote2-2 {
+	text-align: right;
+}
