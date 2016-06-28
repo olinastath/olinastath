@@ -31,6 +31,14 @@ $('#contact').on('click',function() {
 	$('div.contact').fadeToggle(2500);
 });
 
+$('#title').on('click',function() {
+	$('div.main').animate( {left: "50%"}, 2500);
+	$('div.about').fadeOut(1000);
+	$('div.projects').fadeOut(1000);
+	$('div.press').fadeOut(1000);
+	$('div.contact').fadeOut(1000);
+});
+
 $(function(){
     $(".i-like").typed({
     strings: ["the internet.", "apple pie.", "intersectional feminism.", 
