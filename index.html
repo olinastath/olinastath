@@ -3,7 +3,6 @@
 <head>
 	<title>Olina Stathopoulou | full stack + iOS</title>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<link rel="shortcut icon" href="logo.png">
 	<link rel="stylesheet" href="style/stylesheet.css">
 	<link rel="stylesheet" href="style/font-awesome/css/font-awesome.css"> 
@@ -12,14 +11,14 @@
 <body>
 	<div class="main">
 		<h1 id="title">Olina Stathopoulou</h1>
-		<div class="links">
+		<p class="links">
 			<span id="about">about</span> &#8226; 
 			<span id="projects">projects</span> &#8226; 
 			<a href="resume.pdf">resume</a> &#8226; 
+			<span id="press">press</span> &#8226; 
 			<span id="contact">contact</span>
-		</div>
+		</p>
 		
-		<br />
 
 		<div class="social">
 			<span id="github">
@@ -38,29 +37,36 @@
 	</div>
 
 	<div class="about">
-			<h1>Hi there!</h1>
-			<p>My name is Olina and I'm a full stack and iOS developer. I'm from Greece and I'm currently living in New York, studying Mathematics and Computer Science at New York University. I like the internet, feminism, theatre, meta humor, sad indie rock, and mashed potatoes. If you like any of those things hmu and let's be friends.</p>
+		<h1>Hi there!</h1>
+		<p>My name is Olina and I'm a New York-based full stack and iOS developer! I'm from Greece and I'm currently studying Math and Computer Science at New York University. </p>
+		<p>I like <span class="i-like"></span><br>
+		If you like any of those things hmu and let's be friends!</p>
+		<img src="images/image4.png">
+	</div>
+
+	<div class="projects">
+		<h1>Projects</h1>
+	</div>
+
+	<div class="press">
+		<h1>Press</h1>
+		<p><a href="http://www.hercampus.com/school/nyu/olina-stathopoulou-stem-driven-womens-rights-advocate-love-theatre">Olina Stathopoulou: A STEM-Driven, Women's Rights Advocate With A Love For Theatre</a></p>
+
+		
 	</div>
 
 	<div class="contact">
 			<h1>Contact</h1>
-			<p>You can email me at contact@olinastath.com or find me on the interwebs through my social links on the left! </p>
+			<p>You can email me at <span id="email">hello@olinastath.com</span> or find me on the interwebs through my social links on the left! </p>
 	</div>
+
+	<div class="copyright">&copy; 2016 Olina Stathopoulou</div>
 
 </body>
 
-<script type="text/javascript">
-$('#about').on('click',function() {
-	$('div.main').animate( {left: "25%"}, 2500);
-	$('div.contact').fadeOut(1000);
-	$('div.about').fadeToggle(2500);
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/typed.js" type="text/javascript"></script>
 
-});
+<script src="js/js.js"></script>
 
-$('#contact').on('click',function() {
-	$('div.main').animate( {left: "25%"}, 2500);
-	$('div.about').fadeOut(1000);
-	$('div.contact').fadeToggle(2500);
-});
-</script>
 </html>
