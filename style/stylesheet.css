@@ -44,6 +44,9 @@ p, span, a {
 	color: #f68ea9;
 }
 
+#title, .links span {
+	cursor: pointer;
+}
 .social span {
 	margin-right: 5px;
 	text-decoration: none;
