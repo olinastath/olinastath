@@ -382,7 +382,7 @@ div #about-image {
 }
 
 @media only screen and (device-height: 480px) {
-	.main, .about {
+	.about {
 		width: 90%;
 		height: 75%;
 		overflow-y: auto;
