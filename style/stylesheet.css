@@ -342,3 +342,41 @@ div #about-image {
 		width: 99.3%;
 	}
 }
+
+/*h1 {
+	font-size: 40px;
+}*/
+
+@media only screen and (max-device-width: 435px) {
+	.main, .about, .press, .contact {
+		font-size: 3em;
+		width: 90%;
+	}
+
+	.projects {
+		font-size: 3em;
+		width: 100%;
+	}
+
+	.press {
+		top: 30% !important; 
+	}
+
+	.reviews {
+		width: 90%;
+	}
+}
+
+@media only screen and (min-device-width: 568px) and (max-device-width: 667px) {
+	.main {
+		font-size: 1.5em;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-device-width: 668px) and (max-device-width: 773px) {
+	.main {
+		font-size: 2em;
+		width: 90%;
+	}
+}
