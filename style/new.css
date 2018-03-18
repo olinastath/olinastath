@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+body {
+	font-family: 'Quicksand', sans-serif; 
+	font-weight: 400;
+	color: gray;
+}
+
+.content {
+	background: white;
+	padding: 2% 4% 4% 4%;
+	width: 90%;
+	height: auto;
+	margin: 1%;
+	display: block;
+}
+
+.border {
+	display: block;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: linear-gradient(225deg, #ffabab, #ffdaab, #ddffab, #abe4ff, #d9abff);
+	background-size: 300% 300%;
+	margin: 0;
+	-webkit-animation: pastelRainbow 25s ease infinite;
+	-moz-animation: pastelRainbow 25s ease infinite;
+	animation: pastelRainbow 25s ease infinite;
+}
+
+@-webkit-keyframes pastelRainbow {
+  0% {
+    background-position: 94% 0%; }
+  50% {
+    background-position: 7% 100%; }
+  100% {
+    background-position: 94% 0%; } }
+
+@-moz-keyframes pastelRainbow {
+  0% {
+    background-position: 94% 0%; }
+  50% {
+    background-position: 7% 100%; }
+  100% {
+    background-position: 94% 0%; } }
+
+@keyframes pastelRainbow {
+  0% {
+    background-position: 94% 0%; }
+  50% {
+    background-position: 7% 100%; }
+  100% {
+    background-position: 94% 0%; } }
+
+a:hover {
+	color: #ffabab;
+}
+
+.highlight {
+	color: #ffabab;
+	font-weight: 500;
+}
+
+
+/* TOP */
+.name {
+	vertical-align: middle;
+	/*border: 1px solid black;*/
+	/*margin-left: 2%;*/
+	display: inline-block;
+	width: 50%;
+	letter-spacing:.1em;
+}
+
+.name h1 {
+	margin-bottom: 0px;
+	font-weight: 500;
+}
+
+.name h3 {
+	margin-top: 0px;
+	font-weight: 400;
+}
+
+.links {
+	vertical-align: middle;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	width: 48%;
+	text-align: right;
+}
+
+.links a {
+	font-weight: 400;
+	margin-left: 10px;
+	letter-spacing:.1em;
+	text-decoration: none;
+	color: gray;
+}
+
+/* ABOUT */
+
+.title, .project h2 {
+	margin-bottom: 0px;
+	letter-spacing:.1em;
+	font-weight: 500;
+}
+
+#about .blurb {
+	vertical-align: middle;
+	width: 50%;
+	display: inline-block;
+}
+
+#about img {
+	vertical-align: middle;
+	width: 40%;
+	display: inline-block;
+	padding-left: 9%;
+}
+
+/* PROJECTS */
+
+.project {
+	margin: 5% 5% 0% 5%;
+}
+
+.project .blurb {
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
+	text-align: center;
+}
+
+.project h2 {
+	margin-bottom: 5px;
+}
+
+.project-links a:first-child {
+	margin-right: 10px;
+}
+
+.project-links a {
+	font-weight: 400;
+	letter-spacing:.1em;
+	text-decoration: none;
+	color: gray;
+}
+
+.technologies {
+	margin-top: 5px;
+}
+
+.project img {
+	padding-left: 7%;
+	padding-right: 7%;
+	display: inline-block;
+	width: 35%;
+}

@@ -11,56 +11,115 @@
 
 
 
-	<title>Olina Stathopoulou | Home</title>
+	<title>Olina Stathopoulou | Full-Stack Developer</title>
 
 	<link rel="shortcut icon" href="images/icon.png">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="stylesheet" href="style/stylesheet.css">
+	<link rel="stylesheet" href="style/new.css">
 	<link rel="stylesheet" href="style/animate.css">
 	<script src="https://use.fontawesome.com/70a8e5e68a.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/typed.js"></script>
+	<script>
+      $(function(){
+      	$(".i-like").typed({
+	    strings: ["the internet.", "apple pie.", "intersectional feminism.", "cacti.", "twitter.", "meta humor.", "complex female characters.", "Johnny Gallagher.", "science.", "pop culture.", "YA novels.","sad indie rock.", "Crazy Ex-Girlfriend.", "the color green.", "Sylvia Plath.", "mashed potatoes.", "Community.", "oreos.", "road trip movies.", "broccoli.", "the color pink.", "television.", "New York.", "concerts.", "Bo Burnham.", "cult movies.", "Daphne."],
+	    typeSpeed: 10,
+	    showCursor: true,
+	    loop: true,
+	    loopCount: false,
+	    startDelay: 3000,
+	    backDelay: 1200,
+	    });
+      });
+    </script>
 
 </head>
 
 <body>
 
-<div class="container back">
-<div class="container border">
-<div class="container front">
-	<div class="main"> 
-		<h1 class="animated slideInUp" id="title">Olina Stathopoulou</h1>
-		<p class="links animated slideInUp">
-			<a href="about">about</a> &#8226; 
-			<a href="projects">projects</a> &#8226; 
-			<a href="resume.pdf" target="_blank">resume</a> &#8226; 
-			<a href="press">press</a> &#8226; 
-			<a href="contact">contact</a>
-		</p>
-		
+	<!-- <div class="container back">
+		<div class="container border">
+			<div class="container front">
+				<div class="main"> 
+					<h1 class="animated slideInUp" id="title">Olina Stathopoulou</h1>
+					<p class="links animated slideInUp">
+						<a href="about">about</a> &#8226; 
+						<a href="projects">projects</a> &#8226; 
+						<a href="resume.pdf" target="_blank">resume</a> &#8226; 
+						<a href="press">press</a> &#8226; 
+						<a href="contact">contact</a>
+					</p>
+					
 
-		<div class="social">
-			<span id="github">
-				<a href="https://github.com/olinastath" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-			</span>
-			<!-- <span id="twitter">
-				 <a href="https://twitter.com/olinastath" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			</span>
-			<span id="instagram">
-				 <a href="https://instagram.com/olinast/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-			</span> -->
-			<span id="linkedin">
-				 <a href="https://www.linkedin.com/in/olinastath" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-			</span>
-		</div>	
+					<div class="social">
+						<span id="github">
+							<a href="https://github.com/olinastath" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+						</span>
+						<span id="linkedin">
+							 <a href="https://www.linkedin.com/in/olinastath" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+						</span>
+					</div>	
+				</div>
+
+				<div class="copyright">&copy; 2016 Olina Stathopoulou</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="border">
+		<div class="content">
+			<div id="top">
+				<div class="name">
+					<h1>Olina Stathopoulou</h1>
+					<h3>Full-Stack Developer</h3>
+				</div>
+
+				<nav class="links">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="/resume.pdf" target="_blank">Resume</a>
+					<a href="#press">Press</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+
+			<div id="about"> 
+				<h1 class="title">About</h1>
+				<div class="blurb">
+					<p>My name is Olina and I'm a New York-based <span class="highlight">full-stack developer</span>.</p>
+					<p>Originally from Greece, I moved to New York in 2014 to pursue my studies at <span class="highlight">New York University</span>. In May 2018, I will receive my Bachelor's degree in Computer Science and Mathematics, with a minor in Dramatic Literature. </p>
+					<p>I love going to the theatre, planning future trips, reading, Lorde, and building things people can interact with.</p>
+					<p>Some other things I like: <span class="i-like"></span></p>
+				</div>
+
+				<img src="images/about-image.png">
+			</div>
+
+			<div id="projects"> 
+				<h1 class="title">Projects</h1>
+
+				<div class="project" id="project-1">
+					<div class="blurb">
+						<h2>Dinr</h2>
+
+						<nav class="project-links">
+							<a href="">GitHub</a>
+							<a href="">Live Demo</a>
+						</nav>
+
+						<p class="technologies"><i>Technologies used</i>: </p>
+					</div>
+					
+					<img src="images/macbook.jpg">
+				</div>
+
+				
+			</div>
+
+		</div>
 	</div>
-
-	<div class="copyright">&copy; 2016 Olina Stathopoulou</div>
-</div>
-</div>
-</div>
-
 </body>
 
 </html>
