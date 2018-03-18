@@ -55,13 +55,13 @@ body {
   100% {
     background-position: 94% 0%; } }
 
-a:hover {
-	color: #ffabab;
-}
-
 .highlight {
 	color: #ffabab;
 	font-weight: 500;
+}
+
+a:hover {
+	color: #ffabab !important;
 }
 
 
