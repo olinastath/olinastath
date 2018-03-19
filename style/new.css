@@ -91,7 +91,7 @@ a:hover {
 	color: gray;
 }
 
-.links {
+#top .links {
 	vertical-align: middle;
 	/*border: 1px solid black;*/
 	display: inline-block;
@@ -179,11 +179,38 @@ a:hover {
 	width: 45%;
 	display: inline-block;
 	vertical-align: top;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 #education {
 	margin-left: 5%;
+}
+
+#education h2, #professional h2 {
+	font-weight: 400;
+}
+
+#education h3, #professional h3 {
+	/*border: 1px solid black;*/
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+#education h5, #professional h5 {
+	margin-top: 0px;
+	display: inline-block;
+}
+
+.left, .right {
+	width: 48%;
+}
+
+.right {
+	text-align: right;
+}
+
+div .right {
+	display: inline-block;
 }
 
 
@@ -198,4 +225,10 @@ a:hover {
 
 #press a:hover {
 	text-decoration: underline;
+}
+
+/* CONTACT */
+
+#contact a {
+	text-decoration: none;
 }
