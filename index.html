@@ -106,7 +106,7 @@
 						<h2>smoodify</h2>
 						<nav class="project-links">
 							<a href="https://github.com/nyu-software-engineering/mood-music-player" target="_blank">GitHub</a>
-							<a href="https://smoodify.herokuapp.com">Live Demo</a>
+							<a href="https://smoodify.herokuapp.com" target="_blank">Live Demo</a>
 						</nav>
 
 						<p class="description">
@@ -129,7 +129,7 @@
 					<div class="blurb">
 						<h2>Greenwich Muse</h2>
 						<nav class="project-links">
-							<a href="https://greenwich-muse.herokuapp.com">Live Demo</a>
+							<a href="https://greenwich-muse.herokuapp.com" target="_blank">Live Demo</a>
 						</nav>
 
 						<p class="description">
@@ -149,7 +149,7 @@
 						<h2>Dinr</h2>
 						<nav class="project-links">
 							<a href="https://github.com/olinastath/dinr" target="_blank">GitHub</a>
-							<a href="">Live Demo</a>
+							<a href="https://thedinr.herokuapp.com" target="_blank">Live Demo</a>
 						</nav>
 
 						<p class="description">
@@ -175,11 +175,11 @@
 						<h2>Chatroom</h2>
 						<nav class="project-links">
 							<a href="https://github.com/olinastath/chat-app" target="_blank">GitHub</a>
-							<a href="">Live Demo</a>
+							<a href="https://rose-chanter.glitch.me" target="_blank">Live Demo</a>
 						</nav>
 
 						<p class="description">
-							I built this <span class="highlight">chatroom web app using socket.io</span> to experiment with <span class="highlight">networked applications</span>! When a user navigates to the chatroom, he can select a username provided no other user is logged into the chatroom with that username. Then, he enters the room and can start sending messages to other connected users. Messages sent before a user logged in cannot be viewed by that user.
+							I built this <span class="highlight">chatroom web app using socket.io</span> to experiment with <span class="highlight">networked applications</span>. When a user navigates to the chatroom, he can select a username provided no other user is logged into the chatroom with that username. Then, he enters the room and can start sending messages to other connected users. Messages sent before a user logged in cannot be viewed by that user.
 						</p>
 
 						<p class="technologies">
@@ -190,22 +190,20 @@
 					</div>
 				</div>
 
-				<div class="project" id="imdb-server">
+				<div class="project" id="imdb-api">
 					<div class="blurb">
-						<h2>Dinr</h2>
+						<h2>IMDb API</h2>
 						<nav class="project-links">
-							<a href="https://github.com/olinastath/dinr" target="_blank">GitHub</a>
-							<a href="">Live Demo</a>
+							<a href="https://github.com/olinastath/imdb-scraper" target="_blank">Scraper</a>
+							<a href="https://github.com/olinastath/imdb-api-server" target="_blank">Server</a>
 						</nav>
 
 						<p class="description">
-							You're vegan. Your best friend has celliac disease and she just started dating a guy who keeps kosher. How are y'all supposed to ever decide on a restaurant to get dinner? <span class="highlight">That's where Dinr comes in.</span>
-							<br><br>
-							Dinr is the millennial response to your friends' increasing dietary restrictions. It is a web app that allows users to look for <span class="highlight">personalized restaurant recommendations based on their (and their friends'!) dietary restrcitions</span>. Once you create a profile and add all your restrictions, you can add your friends and create events. Then, based on the collective restrictions of the members participating in the event, Dinr will give you restaurant recommendations. So you don't starve to death while endlessly Yelping places.
+							Built a scraper and API server for IMDb's "Most Popular Movies" and "Most Popular TV" pages. The scraper remotely populate a database and the server retrieves them from the database.
 						</p>
 
 						<p class="technologies">
-							<span class="highlight">Technologies used</span>: JavaScript, Node.js, Express.js, MongoDB, Mongoose, Handlebars, HTML/CSS, passport.js, Yelp Fusion API
+							<span class="highlight">Technologies used</span>: JavaScript, Node.js, Express.js, PostgreSQL, HTML, Handlebars, cheerio
 						</p>
 
 						<p class="built">Built in <span class="highlight">Fall 2017</span>.</p>
@@ -218,58 +216,29 @@
 					<img src="images/macbook.jpg">
 
 					<div class="blurb">
-						<h2>QuizzFeed</h2>
+						<h2>Blackjack</h2>
 						<nav class="project-links">
-							<a href="https://github.com/olinastath/quizzfeed" target="_blank">GitHub</a>
-							<a href="">Live Demo</a>
+							<a href="https://blackjack.glitch.me" target="_blank">Live Demo</a>
 						</nav>
 
 						<p class="description">
-							QuizzFeed is the <span class="highlight">first</span> web application that I ever developed! Using the Scrapy module, it <span class="highlight">scrapes BuzzFeed's quizzes</span> section and stores quizzes into a PostgreSQL database. The generator view allows users to click on a button and get a link to a <span class="highlight">random quiz from the database</span>. 
-							<br><br>
-							I am planning on <span class="highlight">adding a search feature</span> to the application which will allow users to look for quizzes based on a seed - something which BuzzFeed lacks and which was what gave me the idea for the app originally.
+							A user vs. computer, single-hand Blackjack. You can choose the first few hands in the initial page or just play by clicking the "play!" button.
 						</p>
 
 						<p class="technologies">
-							<span class="highlight">Technologies used</span>: Python, Django, Scrapy, PostgreSQL, HTML/CSS
-						</p>
-
-						<p class="built">Built in <span class="highlight">Summer 2017</span>.</p>
-					</div>
-				</div>
-
-				<div class="project" id="othello">
-					<div class="blurb">
-						<h2>Dinr</h2>
-						<nav class="project-links">
-							<a href="https://github.com/olinastath/dinr" target="_blank">GitHub</a>
-							<a href="">Live Demo</a>
-						</nav>
-
-						<p class="description">
-							You're vegan. Your best friend has celliac disease and she just started dating a guy who keeps kosher. How are y'all supposed to ever decide on a restaurant to get dinner? <span class="highlight">That's where Dinr comes in.</span>
-							<br><br>
-							Dinr is the millennial response to your friends' increasing dietary restrictions. It is a web app that allows users to look for <span class="highlight">personalized restaurant recommendations based on their (and their friends'!) dietary restrcitions</span>. Once you create a profile and add all your restrictions, you can add your friends and create events. Then, based on the collective restrictions of the members participating in the event, Dinr will give you restaurant recommendations. So you don't starve to death while endlessly Yelping places.
-						</p>
-
-						<p class="technologies">
-							<span class="highlight">Technologies used</span>: JavaScript, Node.js, Express.js, MongoDB, Mongoose, Handlebars, HTML/CSS, passport.js, Yelp Fusion API
+							<span class="highlight">Technologies used</span>: JavaScript
 						</p>
 
 						<p class="built">Built in <span class="highlight">Fall 2017</span>.</p>
 					</div>
-
-					<img src="images/macbook.jpg">
 				</div>
 
 				<div class="project" id="quizzfeed">
-					<img src="images/macbook.jpg">
-
 					<div class="blurb">
 						<h2>QuizzFeed</h2>
 						<nav class="project-links">
 							<a href="https://github.com/olinastath/quizzfeed" target="_blank">GitHub</a>
-							<a href="">Live Demo</a>
+							<!-- <a href="" target="_blank">Live Demo</a> -->
 						</nav>
 
 						<p class="description">
@@ -284,6 +253,8 @@
 
 						<p class="built">Built in <span class="highlight">Summer 2017</span>.</p>
 					</div>
+					
+					<img src="images/macbook.jpg">
 				</div>
 			</div>
 
