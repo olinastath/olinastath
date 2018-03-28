@@ -1,20 +1,17 @@
 <!doctype html>
 <html>
 <head lang="en">
-	<meta name="description" content="My name is Olina and I'm a New York-based back-end developer! I'm from Greece and I'm currently studying Math and Computer Science at New York University.">
-	<meta name="keywords" content="Olina Stathopoulou, Olina, Olina NYU, Olina Stathopoulou NYU, olinastath">
+	<meta name="description" content="My name is Olina and I'm a New York-based full-stack developer. Originally from Greece, I moved to New York in 2014 to pursue my studies at New York University. In May 2018, I will receive my Bachelor's degree in Computer Science and Mathematics, with a minor in Dramatic Literature.">
+	<meta name="keywords" content="Olina Stathopoulou, Olina, Olina NYU, Olina Stathopoulou NYU, olinastath, Ioanna Stathopoulou, Stathopoulou, Ioanna NYU, Stathopoulou NYU">
 	
 	<meta property="og:title" content="Olina Stathopoulou">
 	<meta property="og:type" content="website">
-	<meta property="og:description" content="New York-based back-end developer. Currently studying Math and Computer Science at New York University.">
+	<meta property="og:description" content="New York-based full-stack developer. Currently studying Math and Computer Science at New York University.">
 	<meta property="og:image" content="../images/about-image.png">
-
-
 
 	<title>Olina Stathopoulou | Full-Stack Developer</title>
 
 	<link rel="shortcut icon" href="images/icon.png">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="stylesheet" href="style/new.css">
 	<link rel="stylesheet" href="style/animate.css">
 	<script src="https://use.fontawesome.com/70a8e5e68a.js"></script>
@@ -33,41 +30,26 @@
 	    backDelay: 1200,
 	    });
       });
-    </script>
 
+      var count = 1;
+		$(function quote(count) {
+			if (count <= 3) { // change to 4 if quote4 visible
+				$('div.review#quote' + count).fadeIn(4000, function() {
+					$('div.review#quote' + count).fadeOut(4000);
+					count++;
+					quote(count, 'div.review#quote' + count);
+				});
+				
+			} else {
+				count = 1;
+				quoteNum = 'div.review#quote' + count;
+				quote(count, quoteNum);
+			}
+		});
+    </script>    
 </head>
 
 <body>
-
-	<!-- <div class="container back">
-		<div class="container border">
-			<div class="container front">
-				<div class="main"> 
-					<h1 class="animated slideInUp" id="title">Olina Stathopoulou</h1>
-					<p class="links animated slideInUp">
-						<a href="about">about</a> &#8226; 
-						<a href="projects">projects</a> &#8226; 
-						<a href="resume.pdf" target="_blank">resume</a> &#8226; 
-						<a href="press">press</a> &#8226; 
-						<a href="contact">contact</a>
-					</p>
-					
-
-					<div class="social">
-						<span id="github">
-							<a href="https://github.com/olinastath" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-						</span>
-						<span id="linkedin">
-							 <a href="https://www.linkedin.com/in/olinastath" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-						</span>
-					</div>	
-				</div>
-
-				<div class="copyright">&copy; 2016 Olina Stathopoulou</div>
-			</div>
-		</div>
-	</div> -->
-
 	<div class="border">
 		<div class="content">
 			<div id="top">
@@ -79,7 +61,6 @@
 				<nav class="links">
 					<a href="#about">About</a>
 					<a href="#projects">Projects</a>
-					<a href="#experience">Experience</a>
 					<a href="/resume.pdf" target="_blank">Resume</a>
 					<a href="#press">Press</a>
 					<a href="#contact">Contact</a>
@@ -257,41 +238,30 @@
 					<img src="images/macbook.jpg">
 				</div>
 			</div>
-
-			<!-- <div id="experience">
-				<h1 class="title">Experience</h1>
-				<div id="professional">
-					<h2>Professional Experience</h2>
-					<div class="job">
-						<h3>blueground</h3>
-						<div class="right">New York, NY</div>
-						<br>
-						<h5 class="left">Software Engineering Intern</h5>
-						<h5 class="right">January 2018 - Present</h5>
-						<p>Implement algorithm to calculate best route and schedule possible for tasks (i.e. repairs) across multiple properties in a city.
-						<br>Build interface for displaying daily schedule and route for company’s “runners.”</p>
-					</div>
-
-					<div class="job">
-						<h3>Arete</h3>
-					</div>
-				</div>
-
-				<div id="education">
-					<h2>Education</h2>
-					<div class="school">
-						<h3>New York University</h3>
-					</div>
-					<div class="school">
-						<h3>Hellenic American Educational Foundation (HAEF)</h3>
-					</div>
-				</div>
-			</div> -->
-
+			
 			<div id="press">
 				<h1 class="title">Press</h1>
 				<div class="blurb">
 					<a href="http://www.hercampus.com/school/nyu/olina-stathopoulou-stem-driven-womens-rights-advocate-love-theatre">Olina Stathopoulou: A STEM-Driven, Women's Rights Advocate With A Love For Theatre</a>
+				</div>
+
+				<div class="reviews">
+					<div class="review" id="quote1">
+						<h2><i>"you are so confusing Olina why are we friends"</i></h2>
+						<h4> - Anna</h4>
+					</div>
+					
+					<div class="review" id="quote2">
+						<h2 id="quote2-1"><i>"go away"</i></h2> 
+						<h4 id="quote2-1"> - Georgia</h4>
+						<h2 id="quote2-2"><i>"10/10"</i></h2>
+						<h4 id="quote2-2"> - also Georgia</h4>
+					</div>
+					
+					<div class="review" id="quote3">
+						<h2><i>"the queen of awkward random encounter"</i></h2>
+						<h4> - Alyssa</h4>
+					</div>
 				</div>
 			</div>
 
@@ -307,6 +277,11 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="copyright">
+			<p>made with <i class="fa fa-heart highlight"></i> by Olina Stathopoulou</p>
+		</div>
+
 	</div>
 </body>
 

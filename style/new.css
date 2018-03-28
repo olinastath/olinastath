@@ -216,6 +216,12 @@ div .right {
 
 /* PRESS */
 
+#press .blurb {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
 #press a {
 	font-size: 18px;
 	margin-left: 15px;
@@ -227,8 +233,69 @@ div .right {
 	text-decoration: underline;
 }
 
+.reviews {
+	display: inline-block;
+	z-index: 100;
+	padding-left: 120px;
+	min-width: 320px;
+}
+
+.review {
+	display:none;
+	margin-top: -50px;
+	position: absolute;
+	z-index: 100;
+	min-width: 320px;	
+	opacity:0.8;
+}
+
+.review h2 {
+	text-align: center;
+}
+
+.review h4 {
+	text-align: right;
+}
+
+#quote2 {
+	padding-left: 100px;
+	display:none;
+	position: absolute;
+	z-index: 100;
+	min-width: 320px;	
+	opacity:0.8;
+}
+
+#quote2-1 {
+	text-align: left;
+}
+
+#quote2-2 {
+	text-align: right;
+}
+
 /* CONTACT */
 
+#contact {
+	width: 50%;
+}
 #contact a {
 	text-decoration: none;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+	position: absolute;
+	-webkit-transform: translate(-50%,0%);
+	   -moz-transform: translate(-50%,0%);
+		 -o-transform: translate(-50%,0%);
+			transform: translate(-50%,0%);
+	left: 50%;
+	margin: 0px;
+	font-size: .8em;
+}
+
+#copyright p {
+	margin: -6px auto 6px auto;
 }
