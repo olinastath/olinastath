@@ -160,8 +160,17 @@ a:hover {
 #about img {
 	vertical-align: middle;
 	width: 43%;
-	display: inline-block;
 	padding-left: 5%;
+}
+
+.img-dark,
+.dark-mode .img-light {
+	display: none;
+}
+
+.img-light,
+.dark-mode .img-dark {
+	display: inline-block;
 }
 
 /* PROJECTS */
