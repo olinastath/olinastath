@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700");
 
 body {
-	font-family: 'Quicksand', sans-serif; 
+	font-family: "Quicksand", sans-serif;
 	font-weight: 400;
 	color: gray;
 }
@@ -15,6 +15,15 @@ body {
 	display: block;
 }
 
+.dark-mode,
+.dark-mode .name a,
+.dark-mode .name h3,
+.dark-mode .links a,
+.dark-mode .project-links a {
+	color: white;
+	background: #211e1e;
+}
+
 .border {
 	display: block;
 	overflow: auto;
@@ -23,7 +32,14 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	background: linear-gradient(225deg, #ffabab, #ffdaab, #ddffab, #abe4ff, #d9abff);
+	background: linear-gradient(
+		225deg,
+		#ffabab,
+		#ffdaab,
+		#ddffab,
+		#abe4ff,
+		#d9abff
+	);
 	background-size: 300% 300%;
 	margin: 0;
 	-webkit-animation: pastelRainbow 25s ease infinite;
@@ -32,28 +48,40 @@ body {
 }
 
 @-webkit-keyframes pastelRainbow {
-  0% {
-    background-position: 94% 0%; }
-  50% {
-    background-position: 7% 100%; }
-  100% {
-    background-position: 94% 0%; } }
+	0% {
+		background-position: 94% 0%;
+	}
+	50% {
+		background-position: 7% 100%;
+	}
+	100% {
+		background-position: 94% 0%;
+	}
+}
 
 @-moz-keyframes pastelRainbow {
-  0% {
-    background-position: 94% 0%; }
-  50% {
-    background-position: 7% 100%; }
-  100% {
-    background-position: 94% 0%; } }
+	0% {
+		background-position: 94% 0%;
+	}
+	50% {
+		background-position: 7% 100%;
+	}
+	100% {
+		background-position: 94% 0%;
+	}
+}
 
 @keyframes pastelRainbow {
-  0% {
-    background-position: 94% 0%; }
-  50% {
-    background-position: 7% 100%; }
-  100% {
-    background-position: 94% 0%; } }
+	0% {
+		background-position: 94% 0%;
+	}
+	50% {
+		background-position: 7% 100%;
+	}
+	100% {
+		background-position: 94% 0%;
+	}
+}
 
 .highlight {
 	color: #ffabab;
@@ -64,7 +92,6 @@ a:hover {
 	color: #ffabab !important;
 }
 
-
 /* TOP */
 .name {
 	vertical-align: middle;
@@ -72,7 +99,7 @@ a:hover {
 	/*margin-left: 2%;*/
 	display: inline-block;
 	width: 50%;
-	letter-spacing:.1em;
+	letter-spacing: 0.1em;
 }
 
 .name h1 {
@@ -84,7 +111,8 @@ a:hover {
 	text-decoration: none;
 }
 
-.name h3, .name a {
+.name h3,
+.name a {
 	margin-top: 0px;
 	font-weight: 400;
 	display: inline-block;
@@ -102,16 +130,17 @@ a:hover {
 .links a {
 	font-weight: 400;
 	margin-left: 10px;
-	letter-spacing:.1em;
+	letter-spacing: 0.1em;
 	text-decoration: none;
 	color: gray;
 }
 
 /* ABOUT */
 
-.title, .project h2 {
+.title,
+.project h2 {
 	margin-bottom: 0px;
-	letter-spacing:.1em;
+	letter-spacing: 0.1em;
 	font-weight: 500;
 }
 
@@ -119,24 +148,31 @@ a:hover {
 	vertical-align: middle;
 	width: 50%;
 	display: inline-block;
+	line-height: 1.4em;
+}
+
+#about .blurb a {
+	font-weight: 500;
+	text-decoration: none;
+	color: #ffabab;
 }
 
 #about img {
 	vertical-align: middle;
-	width: 40%;
+	width: 43%;
 	display: inline-block;
-	padding-left: 9%;
+	padding-left: 5%;
 }
 
 /* PROJECTS */
 
 .project {
-	margin: 5% 5% 0% 5%;
+	margin: 3% 3% 6%;
 }
 
 .project .blurb {
 	display: inline-block;
-	width: 50%;
+	width: 49%;
 	vertical-align: middle;
 	text-align: center;
 }
@@ -152,7 +188,7 @@ a:hover {
 
 .project-links a {
 	font-weight: 400;
-	letter-spacing:.1em;
+	letter-spacing: 0.1em;
 	text-decoration: none;
 	color: gray;
 }
@@ -162,20 +198,31 @@ a:hover {
 }
 
 .project img {
-	padding-left: 7%;
-	padding-right: 7%;
+	/* padding-left: 3%;
+	padding-right: 3%; */
 	display: inline-block;
-	width: 35%;
+	width: 47%;
 	vertical-align: middle;
 }
 
-.project .description, .technologies, .built {
+.project:nth-child(odd) img {
+	padding-left: 3%;
+}
+
+.project:nth-child(even) img {
+	padding-right: 3%;
+}
+
+.project .description,
+.technologies,
+.built {
 	text-align: left;
 }
 
 /* EXPERIENCE */
 
-#education, #professional {
+#education,
+#professional {
 	width: 45%;
 	display: inline-block;
 	vertical-align: top;
@@ -186,22 +233,26 @@ a:hover {
 	margin-left: 5%;
 }
 
-#education h2, #professional h2 {
+#education h2,
+#professional h2 {
 	font-weight: 400;
 }
 
-#education h3, #professional h3 {
+#education h3,
+#professional h3 {
 	/*border: 1px solid black;*/
 	margin-bottom: 0px;
 	display: inline-block;
 }
 
-#education h5, #professional h5 {
+#education h5,
+#professional h5 {
 	margin-top: 0px;
 	display: inline-block;
 }
 
-.left, .right {
+.left,
+.right {
 	width: 48%;
 }
 
@@ -212,7 +263,6 @@ a:hover {
 div .right {
 	display: inline-block;
 }
-
 
 /* PRESS */
 
@@ -241,12 +291,12 @@ div .right {
 }
 
 .review {
-	display:none;
+	display: none;
 	margin-top: -50px;
 	position: absolute;
 	z-index: 100;
-	min-width: 320px;	
-	opacity:0.8;
+	min-width: 320px;
+	opacity: 0.8;
 }
 
 .review h2 {
@@ -259,11 +309,11 @@ div .right {
 
 #quote2 {
 	padding-left: 100px;
-	display:none;
+	display: none;
 	position: absolute;
 	z-index: 100;
-	min-width: 320px;	
-	opacity:0.8;
+	min-width: 320px;
+	opacity: 0.8;
 }
 
 #quote2-1 {
@@ -287,15 +337,77 @@ div .right {
 
 #copyright {
 	position: absolute;
-	-webkit-transform: translate(-50%,0%);
-	   -moz-transform: translate(-50%,0%);
-		 -o-transform: translate(-50%,0%);
-			transform: translate(-50%,0%);
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
 	left: 50%;
 	margin: 0px;
-	font-size: .8em;
+	font-size: 0.8em;
 }
 
 #copyright p {
 	margin: -6px auto 6px auto;
+}
+
+/* TOGGLE */
+#toggle-wrapper {
+	position: sticky;
+	height: 0px;
+	width: 103%;
+	top: 25px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.toggle {
+	margin-top: -10px;
+	position: relative;
+	display: inline-block;
+}
+
+.toggle input {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+}
+
+.toggle label.toggle-item {
+	width: 35px;
+	height: 20px;
+	background: transparent;
+	display: inline-block;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+	transform-origin: 20% center;
+	cursor: pointer;
+	border: 1.5px solid rgba(255, 171, 171, 0.5);
+}
+
+.toggle label.toggle-item::before {
+	display: block;
+	content: "";
+	width: 12px;
+	height: 12px;
+	margin: 3px;
+	border-radius: 2em;
+	border: 1.5px solid rgba(153, 129, 129, 0.1);
+	background: linear-gradient(
+		225deg,
+		#ffabab,
+		#ffdaab,
+		#ddffab,
+		#abe4ff,
+		#d9abff
+	);
+	background-size: 300% 300%;
+	-webkit-animation: pastelRainbow 25s ease infinite;
+	-moz-animation: pastelRainbow 25s ease infinite;
+	animation: pastelRainbow 25s ease infinite;
+	transition: 0.3s ease;
+}
+
+#toggleSwitch:checked + label::before {
+	transform: translateX(13px);
 }
