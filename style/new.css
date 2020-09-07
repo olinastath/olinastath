@@ -130,9 +130,14 @@ a:hover {
 .links a {
 	font-weight: 400;
 	margin-left: 10px;
-	letter-spacing: 0.1em;
+	/* letter-spacing: 0.1em; */
 	text-decoration: none;
 	color: gray;
+}
+
+.links .ko-fi-button img {
+	height: 30px;
+    vertical-align: middle;
 }
 
 /* ABOUT */
@@ -369,20 +374,22 @@ div .right {
 	justify-content: flex-end;
 }
 
-.toggle {
+.sticky-element {
 	margin-top: -10px;
 	position: relative;
 	display: inline-block;
+	height: 25px;
+    cursor: pointer;
 }
 
-.toggle input {
+.sticky-element input {
 	left: 0;
 	opacity: 0;
 	position: absolute;
 	top: 0;
 }
 
-.toggle label.toggle-item {
+.sticky-element label.toggle-item {
 	width: 35px;
 	height: 20px;
 	background: transparent;
@@ -394,7 +401,7 @@ div .right {
 	border: 1.5px solid rgba(255, 171, 171, 0.5);
 }
 
-.toggle label.toggle-item::before {
+.sticky-element label.toggle-item::before {
 	display: block;
 	content: "";
 	width: 12px;
